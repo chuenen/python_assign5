@@ -1,5 +1,9 @@
 def fib():
-    a,b=0,1
-    while 1:
-        yield a
-         a,b=b,a+b
+    f1, f2 = 0, 1
+    while True:
+        yield f1
+         f1, f2 = f1, f1+f2
+
+# 命名使解釋更容易
+# 符號間格
+# while True replace while 1
