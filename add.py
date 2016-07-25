@@ -1,10 +1,10 @@
-def add ():
-     with open('abc.txt') as f:
-         num = sorted(f.read().replace('"','').split(','))
+def add (n):
+     num = sorted(n.replace('"','').split(','))
      array = []
      for s in range(len(num)):
+         count = 0
          for w in range (len(num[s])):
              value = ord(num[s][w]) - 64
-             value += value
-         array.append(value * (s+1))
+             count += value
+         array.append(count * (s+1))
      return sum(array)
