@@ -5,6 +5,6 @@ def add ():
      for s in range(len(num)):
          for w in range (len(num[s])):
              value = ord(num[s][w]) - 64
-             value += values
+             value += value
          array.append(value * (s+1))
      return sum(array)
