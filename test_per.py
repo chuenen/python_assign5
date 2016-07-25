@@ -4,6 +4,10 @@ class test_per(unittest.TestCase):
     def test1(self):
         self.assertEqual(perfect(6), True)
         self.assertEqual(perfect(8), False)
+
+    def test_zero(self):
+        self.assertEqual(perfect(0), True)
+        
     def test2(self):
         self.assertEqual(perfect(28), True)
         self.assertEqual(perfect(55), False)
