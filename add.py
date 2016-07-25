@@ -12,5 +12,5 @@ def add ():
          array.append(value * (s+1))
      for i in range (len(array)):
           n += array[i]
-      print n
+     print n
 
