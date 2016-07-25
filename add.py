@@ -10,7 +10,4 @@ def add ():
              value = ord(num[s][w])-64
              value += value
          array.append(value * (s+1))
-     for i in range (len(array)):
-          n += array[i]
-     print n
-
+     return sum(array) 
