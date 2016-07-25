@@ -2,7 +2,7 @@ with open ('file.txt', 'r') as f:
      num = f.read().split('\n')
      num = map(int, num)
 
-ef compare():
+def compare():
      Max = num[0]
      for i in range (len(num)):
          if num[i] > Max:
