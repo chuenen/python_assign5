@@ -1,5 +1,6 @@
 def add (n):
-     num = sorted(n.replace('"','').split(','))
+     pattern = '[A-Z]+'
+     num = re.findall(pattern, n)
      array = []
      for s in range(len(num)):
          count = 0
