@@ -1,6 +1,8 @@
+import re
+
 def add (n):
      pattern = '[A-Z]+'
-     num = re.findall(pattern, n)
+     num = sorted(re.findall(pattern, n))
      array = []
      for s in range(len(num)):
          count = 0
