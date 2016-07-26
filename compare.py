@@ -1,6 +1,5 @@
-def compare():
-    with open ('file.txt') as f:
-         num = map(int, f.read().split('\n'))
+def compare(n):
+    num = map(int, n.split(','))
     array = []
     for _ in range (3):
         Max = num[0]
